@@ -3,6 +3,10 @@ const ProductController = {
     getAll(req,res){
         Product.finAll()
         .then(products=>res.send(products))
+    },
+    insert(req,res){
+        Product.create({...req.body})
+        .then(product=>res.send(product))
     }
 }
 
