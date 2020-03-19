@@ -12,9 +12,6 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Product.associate = function(models) {
     Product.belongsTo(models.CategoryId);
-    Product.belongsToMany(models.Breads,{
-      through:models.sweet,user
-    });
   };
   return Product;
 };

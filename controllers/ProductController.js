@@ -1,4 +1,4 @@
-const {Product} = require('../models/index.js')
+const { Product } = require('../models/index.js')
 const ProductController = {
     getAll(req,res){
         Product.finAll()
