@@ -7,7 +7,9 @@ module.exports = (sequelize, DataTypes) => {
     image_path: DataTypes.STRING
   }, {});
   User.associate = function(models) {
-    // associations can be defined here
-  };
+    User.belongsToMany(models.Product,{
+      through:models.Product
+    });
+    };
   return User;
 };
