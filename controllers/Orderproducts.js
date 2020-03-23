@@ -9,4 +9,5 @@ const CategoryController = {
         .then(category=>res.send(category))
     }
 }
-module.exports = CategoryController;
+
+module.exports=CategoryController;

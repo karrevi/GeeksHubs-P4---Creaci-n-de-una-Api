@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     image_path: DataTypes.STRING
   }, {});
   Product.associate = function(models) {
-    Product.belongsToMany(models.Category, {
-      through: models.clientes
+    Product.belongsToMany(models.OrderProduct, {
+      through: models.Category
     })
   };
   return Product;
