@@ -1,7 +1,7 @@
 const { Category } = require('../models/index.js')
 const CategoryController = {
     getAll(req,res){
-        Category.finAll()
+        Category.findAll()
         .then(categories=>res.send(categories))
     },
     insert(req,res){
