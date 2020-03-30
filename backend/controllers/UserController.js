@@ -2,9 +2,8 @@ const { User , Token } = require('../models/index');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const env = process.env.NODE_ENV || 'development';
-const {
-    jwt_secret
-} = require('../config/config.json')[env];
+const { jwt_secret } = require('../config/config.json')[env];
+
 const UserController = {
     async register(req, res) {
         try {
