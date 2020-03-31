@@ -14,7 +14,7 @@ const ProductController = {
         Product.create({...req.body})
         .then(product=>res.send(product))
     },
-
+    
     async delete(req, res) {
         try {
             await Product.destroy({
