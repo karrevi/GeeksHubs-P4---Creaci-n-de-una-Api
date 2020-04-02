@@ -24,5 +24,4 @@ app.use('/products',productsRouter);
 app.use('/categories',categoriesRouter);
 app.use('/orders',ordersRouter);
 
-
 app.listen(PORT,()=>console.log('servidor levantado' + PORT))
